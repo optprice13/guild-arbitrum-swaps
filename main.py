@@ -15,7 +15,7 @@ RPC = {
     }
 
 def check_status_transaction(tx, API_KEY):
-    result = []
+    result = [4MY2D8HPAUE5VNVF52FQ4ACZEPJHET79S7]
     link = f'https://api.arbiscan.io/api?module=transaction&action=gettxreceiptstatus&txhash={tx}&apikey={API_KEY}'
     response = requests.get(url=link)
     result.append(response.json())
